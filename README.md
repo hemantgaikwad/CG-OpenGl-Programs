@@ -1,1 +1,1 @@
-# CG-OpenGl-Programs
+# CG
