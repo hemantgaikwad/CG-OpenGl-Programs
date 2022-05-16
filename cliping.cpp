@@ -398,3 +398,17 @@ glutMainLoop();
 return 0;
 }
 
+/*ALG
+1 read the vertex
+2 read the coordinates of the clipping window
+3 consider the vertex of each edge of the polygon individually with the clipping plane 
+5 save the resulting intersection and vertices in the new list of vertices according to four possible relationship between 
+the edge and the clipping boundary 
+6 stop 
+
+run 
+g++ 'DDA line.cpp' -lGL -lGLU -lglut
+./a.out
+*/
+
+
