@@ -189,3 +189,64 @@ glutMainLoop();
 return 0; 
 } 
 
+/* run 
+g++ 'br1  line.cpp'       -lGL -lGLU -lglut
+ 
+ alg br
+ Step1: Start Algorithm
+
+Step2: Declare variable x1,x2,y1,y2,d,i1,i2,dx,dy
+
+Step3: Enter value of x1,y1,x2,y2
+                Where x1,y1are coordinates of starting point
+                And x2,y2 are coordinates of Ending point
+
+Step4: Calculate dx = x2-x1
+                Calculate dy = y2-y1
+                Calculate i1=2*dy
+                Calculate i2=2*(dy-dx)
+                Calculate d=i1-dx
+
+Step5: Consider (x, y) as starting point and xendas maximum possible value of x.
+                If dx < 0
+                        Then x = x2
+                        y = y2
+                          xend=x1
+                If dx > 0
+                    Then x = x1
+                y = y1
+                        xend=x2
+
+Step6: Generate point at (x,y)coordinates.
+
+Step7: Check if whole line is generated.
+                If x > = xend
+                Stop.
+
+Step8: Calculate co-ordinates of the next pixel
+                If d < 0
+                    Then d = d + i1
+                If d ≥ 0
+          Then d = d + i2
+                Increment y = y + 1
+
+Step9: Increment x = x + 1
+
+Step10: Draw a point of latest (x, y) coordinates
+
+Step11: Go to step 7
+
+Step12: End of Algorithm
+
+Example: Starting and Ending position of the line are (1, 1) and (8, 5). Find intermediate points.
+
+Solution: x1=1
+                y1=1
+                x2=8
+                y2=5
+                dx= x2-x1=8-1=7
+                dy=y2-y1=5-1=4
+                I1=2* ∆y=2*4=8
+                I2=2*(∆y-∆x)=2*(4-7)=-6
+                d = I1-∆x=8-7=1 
+                */
